@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, blue, red );
+}  
+.contenedorTitulo{
+    margin-bottom: 50px;
+    padding: 20px;
+    color: rgb(5, 5, 5);
+    background-color: rgba(75, 77, 204, 0.623);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}  
+.diseñado h5{
+    font-size: .3em;
+    color: black;
+
+
+}
+.contenedorDescarga input{
+    padding: 10px;
+    margin-left: 20px;
+
+}
+.contenedorDescarga button{
+    padding: 10px;
+}
+div p{
+    color: white;
+    background-color: black;
+    border-radius: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    letter-spacing: 3px;
+}
+iframe{
+    overflow: hidden;
+    height: 200px;
+}
