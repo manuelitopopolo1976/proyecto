@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, blue, rgb(175, 172, 221) );
+    background: linear-gradient(to right, #4d72ec, #afacdd );
 }  
 
 .contenedor {
@@ -27,7 +27,7 @@ body{
 }  
 
 .contenedorTitulo h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -36,46 +36,87 @@ body{
 }
 
 .diseñado h5{
-    font-size: .3rem;
-    color: rgb(199, 196, 24);
+    font-size: 1.3rem;
+    color: #d4d23e;
 }
 
 .instrucciones {
-    width: 100%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #373737;
+    padding: 1rem;
+    background-color: #121212;
+    color: #fff;
+    margin: 1rem auto;
 }
 .instrucciones p {
     font-size: 1rem;
 }
+
+.instrucciones span {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    color: #d4d23e;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDescarga {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+    margin: 0 10%;
+}
+
 .contenedorDescarga input{
     padding: 10px;
-    margin-left: 20px;
-
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #373737;
+    outline: none;
+    border: none;
 }
+
 .contenedorDescarga button{
     padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #121212;
+    box-shadow: 1px 1px 10px 2px #373737;
+    color: #fff;
+    margin-left: 2%;
 }
-div p{
-    color: white;
-    background-color: black;
-    border-radius: 1px solid black;
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid white;
-    letter-spacing: 3px;
-}
+
 iframe{
     overflow: hidden;
     height: 200px;
+    max-width: 90%;
+    margin: 1rem 5%;
 }
 
 @media (max-width: 799px) {
 
     .instrucciones p {
-        font-size: .5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     
-    .contenedorTitulo h1 {
-        font-size: 1.2rem;
+    .diseñado h5{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: .5rem;
     }
 
+    
+    .contenedorDescarga {
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+        margin: auto;
+    }
+
+    .contenedorDescarga button{
+        margin-left: 0;
+    }
+    
 }
