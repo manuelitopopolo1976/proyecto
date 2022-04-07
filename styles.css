@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -8,6 +10,11 @@ body{
     width: 100%;
     background: linear-gradient(to right, blue, rgb(175, 172, 221) );
 }  
+
+.contenedor {
+    width: 100%;
+}
+
 .contenedorTitulo{
     margin-bottom: 50px;
     padding: 20px;
@@ -16,12 +23,28 @@ body{
     font-size: 3em;
     text-shadow: 1px 1px 2px rgb(43, 42, 42);
     display: block;
+    width: 100%;
 }  
+
+.contenedorTitulo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.diseñado {
+    width: 100%;
+}
+
 .diseñado h5{
-    font-size: .3em;
+    font-size: .3rem;
     color: rgb(199, 196, 24);
+}
 
-
+.instrucciones {
+    width: 100%;
+}
+.instrucciones p {
+    font-size: 1rem;
 }
 .contenedorDescarga input{
     padding: 10px;
@@ -44,6 +67,15 @@ iframe{
     overflow: hidden;
     height: 200px;
 }
-.contenedor{
-    display: inline-block;
+
+@media (max-width: 799px) {
+
+    .instrucciones p {
+        font-size: .5rem;
+    }
+    
+    .contenedorTitulo h1 {
+        font-size: 1.2rem;
+    }
+
 }
